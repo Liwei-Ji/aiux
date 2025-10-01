@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI UX design</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="card-container" aria-label="Card button group">
+    
+    <!-- Wayfinders -->
+    <div class="card" role="button" tabindex="0" aria-label="Wayfinders">
+      <i class="fa-solid fa-map" aria-hidden="true"></i>
+      <div class="card-content">
+        <div class="card-title">Wayfinders</div>
+        <div class="card-subtitle">Give users clues about how to interact with the model, particularly when getting started.</div>
+      </div>
+    </div>
+
+    <div class="short-cards" role="list" aria-label="Wayfinders features">
+      <div class="card short" role="button" tabindex="0" aria-label="Follow up">
+        <div class="card-content">
+          <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ace3d8b486ec00160dfaae_followup_card.svg" alt="Follow up icon" class="card-icon" />
+          <div class="card-title">Follow up</div>
+          <div class="card-subtitle">Get more information from the user when the initial prompt isn't sufficiently clear</div>
+        </div>
+      </div>
+
+      <div class="card short" role="button" tabindex="0" aria-label="Initial CTA">
+        <div class="card-content">
+          <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acc398ef2d45e7fca831ba_cta_card.svg" alt="Initial CTA icon" class="card-icon" />
+          <div class="card-title">Initial CTA</div>
+          <div class="card-subtitle">Large, open-ended input inviting the user to start their first interaction with the AI</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Inputs -->
+    <div class="card" role="button" tabindex="0" aria-label="Inputs">
+      <i class="fa-solid fa-keyboard"></i>
+      <div class="card-content">
+        <div class="card-title">Inputs</div>
+        <div class="card-subtitle">Submit the user's prompt to the AI within its surrounding context</div>
+      </div>
+    </div>
+  <div class="short-cards" role="list" aria-label="Inputs features">
+    <div class="card short" role="button" tabindex="0" aria-label="Auto fill">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf3b81d4f4f54c245396b_autofill_card.svg" alt="Auto fill icon" class="card-icon" />
+        <div class="card-title">Auto fill</div>
+        <div class="card-subtitle">Makes it easy for users to extend a prompt to multiple inputs at once</div>
+      </div>
+    </div>
+    <div class="card short" role="button" tabindex="0" aria-label="Madlibs">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf45e3f1431ad0c44551a_inlineaction_card.svg" alt="Inline Actio" class="card-icon" />
+        <div class="card-title">Inline Actio</div>
+        <div class="card-subtitle">Ask or interact with AI contextually based on something already available on the page</div>
+      </div>
+    </div>
+        <div class="card short" role="button" tabindex="0" aria-label="Madlibs">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf60ad26fd9febbe28ffc_madlibs_card.svg" alt="Madlibs" class="card-icon" />
+        <div class="card-title">Madlibs</div>
+        <div class="card-subtitle">Repeatedly run generative tasks without compromising on the format or accuracy</div>
+      </div>
+    </div>
+  </div>
+    
+       <!-- Tuners -->
+    <div class="card" role="button" tabindex="0" aria-label="Tuners">
+      <i class="fa-solid fa-filter"></i>
+      <div class="card-content">
+        <div class="card-title">Tuners</div>
+        <div class="card-subtitle">Let users refine or remix their prompt to get improved results</div>
+      </div>
+    </div>
+      <div class="short-cards" role="list" aria-label="Tuners features">
+    <div class="card short" role="button" tabindex="0" aria-label="Attachments">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad1b90f5349d41aa5ae38a_attachments_card.svg" alt="Attachments icon" class="card-icon" />
+        <div class="card-title">Attachments</div>
+        <div class="card-subtitle">Give the AI a specific reference to anchor its response</div>
+      </div>
+    </div>
+    <div class="card short" role="button" tabindex="0" aria-label="Filters">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad07d23eec6f119675d709_filters_card.svg" alt="Filters Actio" class="card-icon" />
+        <div class="card-title">Filters</div>
+        <div class="card-subtitle">Constrain the inputs or the outputs of the AI by source, type, modality, etc</div>
+      </div>
+    </div>
+        <div class="card short" role="button" tabindex="0" aria-label="Inpainting">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad10e7000b95f2b577f9fb_inpainting_card.svg" alt="Inpainting" class="card-icon" />
+        <div class="card-title">Inpainting</div>
+        <div class="card-subtitle">Target specific areas of the AI's result to regenerate or remix</div>
+      </div>
+    </div>
+          <div class="card short" role="button" tabindex="0" aria-label="Model management">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad1231271efefc27673d31_modelmanagement_card.svg" alt="Model management" class="card-icon" />
+        <div class="card-title">Model management</div>
+        <div class="card-subtitle">Let users specify what model to use for their prompts</div>
+      </div>
+    </div>
+        <div class="card short" role="button" tabindex="0" aria-label="Parameters">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad155b9b8d80f64aebee1e_parameters_card.svg" alt="Parameters" class="card-icon" />
+        <div class="card-title">Parameters</div>
+        <div class="card-subtitle">Include constraints with your prompt for the AI to reference when generating its result</div>  
+    </div>
+   </div>
+     <div class="card short" role="button" tabindex="0" aria-label="Model management">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad15f5719956709202c6e2_personalovoice_card.svg" alt="Personal voice" class="card-icon" />
+        <div class="card-title">Personal voice</div>
+        <div class="card-subtitle">Ensure outputs match your voice, tone, and preferences in a consistent way</div>
+      </div>
+    </div>
+        <div class="card short" role="button" tabindex="0" aria-label="Parameters">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad1cf4e65278d06e72d111_references_card.svg" alt="References" class="card-icon" />
+        <div class="card-title">References</div>
+        <div class="card-subtitle">See and manage what additional sources the AI references to generate its response</div>     
+         </div>
+    </div>
+         <div class="card short" role="button" tabindex="0" aria-label="Parameters">
+      <div class="card-content">
+        <img src="https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad1fe8e715687380252c4e_workflows_card.svg" alt="Workflows" class="card-icon" />
+        <div class="card-title">Workflows</div>
+        <div class="card-subtitle">String generative steps together to synthesize, create, or send content on auto-pilot</div>   
+  </section>
+
+</body>
+</html>
