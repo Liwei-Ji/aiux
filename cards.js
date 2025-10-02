@@ -1,4 +1,4 @@
-// 卡片資料
+//  Card data
 const data = [
   {
     title: "Wayfinders",
@@ -269,29 +269,39 @@ const data = [
 // 渲染函數
 function renderCards(containerId, data) {
   const container = document.getElementById(containerId);
+   const toc = document.getElementById("toc");
 
-  container.innerHTML = data.map(group => `
-    <div class="card" role="button" tabindex="0" aria-label="${group.title}">
-      <i class="${group.icon}" aria-hidden="true"></i>
-      <div class="card-content">
-        <div class="card-title">${group.title}</div>
-        <div class="card-subtitle">${group.subtitle}</div>
+  container.innerHTML = data.map((group, index) => {
+    const groupId = `group-${index}`;
+    return `
+      <div id="${groupId}" class="card" role="button" tabindex="0" aria-label="${group.title}">
+        <i class="${group.icon}" aria-hidden="true"></i>
+        <div class="card-content">
+          <div class="card-title">${group.title}</div>
+          <div class="card-subtitle">${group.subtitle}</div>
+        </div>
       </div>
-    </div>
-    ${group.features && group.features.length ? `
-      <div class="short-cards" role="list" aria-label="${group.title} features">
-        ${group.features.map(f => `
-          <div class="card short" role="button" tabindex="0" aria-label="${f.title}">
-            <div class="card-content">
-              <img src="${f.img}" alt="${f.title} icon" class="card-icon" />
-              <div class="card-title">${f.title}</div>
-              <div class="card-subtitle">${f.subtitle}</div>
+      ${group.features && group.features.length ? `
+        <div class="short-cards" role="list" aria-label="${group.title} features">
+          ${group.features.map(f => `
+            <div class="card short" role="button" tabindex="0" aria-label="${f.title}">
+              <div class="card-content">
+                <img src="${f.img}" alt="${f.title} icon" class="card-icon" />
+                <div class="card-title">${f.title}</div>
+                <div class="card-subtitle">${f.subtitle}</div>
+              </div>
             </div>
-          </div>
-        `).join("")}
-      </div>
-    ` : ""}
-  `).join("");
+          `).join("")}
+        </div>
+      ` : ""}
+    `;
+  }).join("");
+
+  // 建立目錄
+  toc.innerHTML = data.map((group, index) => {
+    const groupId = `group-${index}`;
+    return `<a href="#${groupId}"><i class="${group.icon}"></i> ${group.title}</a>`;
+  }).join("");
 }
 
 // 執行渲染
