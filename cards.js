@@ -1,4 +1,4 @@
-// 卡片的資料
+// 卡片資料
 const data = [
   {
     title: "Wayfinders",
@@ -14,6 +14,21 @@ const data = [
         title: "Initial CTA",
         subtitle: "Large, open-ended input inviting the user to start their first interaction with the AI",
         img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acc398ef2d45e7fca831ba_cta_card.svg"
+      },
+       {
+        title: "Nudges",
+        subtitle: "Alert users to actions they can take to use AI, especially if they are just getting started",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acc6618b356cc505bac940_Nudge_card.svg"
+      },
+      {
+        title: "Suggesions",
+        subtitle: "Solves the blank canvas dilemma with clues for how to prompt",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ace576103ad564b4406d6d_suggestions_card.svg"
+      },
+      {
+        title: "Templates",
+        subtitle: "Structured templates that can be filled by the user or pre-filled by the AI",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ace652459c4533e7d88e3e_template_card.svg"
       }
     ]
   },
@@ -36,6 +51,41 @@ const data = [
         title: "Madlibs",
         subtitle: "Repeatedly run generative tasks without compromising on the format or accuracy",
         img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf60ad26fd9febbe28ffc_madlibs_card.svg"
+      },
+      {
+        title: "Open text",
+        subtitle: "Open ended prompt inputs that can be used in AI conversations and other natural language prompting",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf789178baa4e2e9e9aab_openinput_card.svg"
+      },
+      {
+        title: "Remix",
+        subtitle: "Use existing content as the starting point for prompting",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b5b84cee9245c03c296be6_remix_card.svg"
+      },
+      {
+        title: "Restyle",
+        subtitle: "Transfer styles without changing the underlying structure of a generation",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b35f00d5707febd832b3ca_restyle_card.svg"
+      },
+      {
+        title: "Summary",
+        subtitle: "Have AI distill a topic or resource down to its essence",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf919f39d0154b592c46e_summary_card.svg"
+      },
+      {
+        title: "Synthesis",
+        subtitle: "Distill or reorganize complicated information into simple structure",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68acf9d7f5349d41aa54b92b_synthesize_card.svg"
+      },
+      {
+        title: "Token layering",
+        subtitle: "Construct a prompt with raw tokens, just like building with legos",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b371846133444d3059a978_tokenlayering_card.svg"
+      },
+      {
+        title: "Transform",
+        subtitle: "Use AI to change the modality of content",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b35ec8b17834050ebc98e5_transform_card.svg"
       }
     ]
   },
@@ -135,6 +185,82 @@ const data = [
         title: "Variations",
         subtitle: "Trace through multiple variations of a result to choose the one that works best for them",
         img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ac9935f14f97dac35b004c_variations_card.svg"
+      }
+    ]
+  },
+  {
+    title: "Trust builder",
+    subtitle: "Give users confidence that the AI's results are ethical, accurate, and trustworthy",
+    icon: "fa-solid fa-shield-halved",
+    features: [
+      {
+        title: "Consent",
+        subtitle: "Only capture data from others with their knowledge and permission",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b617c289680bc8e194b949_consent_card.svg"
+      },
+      {
+        title: "Watermark",
+        subtitle: "Identifiers on AI Generative content that humans, software, or programs can read",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad3102cabb29e3abc06f3d_watermarks_card.svg"
+      },
+      {
+        title: "Memory",
+        subtitle: "Control what details the AI knows about you",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad2e956ec69fa4ae8385c2_memory_card.svg"
+      },
+      {
+        title: "Interact with the AI without leaving any traces",
+        subtitle: "Large, open-ended input inviting the user to start their first interaction with the AI",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad2dc30a9b0bee5768c764_incognito_card.svg"
+      }
+    ]
+  },
+  {
+    title: "Dark matter",
+    subtitle: "Potentially nefarious, but certainly ambiguous patterns that impact user trust with questionable user value",
+    icon: "fa-solid fa-virus",
+    features: [
+      {
+        title: "Caveat",
+        subtitle: "Inform users about shortcomings or risks in the model or the technology overall",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad33551d4f4f54c24f6054_caveat_card.svg"
+      },
+      {
+        title: "Rating",
+        subtitle: "Signal expectation gaps or errors in the model – but is that clear to the user?",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/66550b496ae3ac9e19b0d9a2_p_rating.svg"
+      },
+      {
+        title: "Data ownership",
+        subtitle: "Control how the model remembers and uses your data",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68ad348d3ddb47cd6b8c56bd_dataownership_card.svg"
+      }
+    ]
+  },
+  {
+    title: "Identifiers",
+    subtitle: "Differentiate the AI from other features and highlight its use case",
+    icon: "fa-solid fa-microchip",
+    features: [
+      {
+        title: "Color",
+        subtitle: "Visual cues to help users identify AI features or content",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b331d407f299d4789625e6_color_card.svg"
+      },
+      {
+        title: "Disclosure",
+        subtitle: "Clearly mark content and interactions guided or delivered by AI",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b3319ed0bdb1335b8f7c20_disclosure_card.svg"
+      },
+      {
+        title: "Name",
+        subtitle: "How do we refer to the AI?",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b331d407f299d4789625df_name_card.svg"
+      },
+      {
+        title: "Personality",
+        subtitle: "Characteristics that distinguish the AI's personality and vibe",
+        img: "https://cdn.prod.website-files.com/65db6dd21591364dfcb8ae36/68b3319fd0bdb1335b8f7c35_personality_card.svg"   
       }
     ]
   }
